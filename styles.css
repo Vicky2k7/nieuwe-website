@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: Furore;
+    src: url("./Furore.otf") format("opentype");
+}
+
+* {font-family: Furore, sans-serif;}
+
+header {
+    height:  3.69rem;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: white;
+    opacity: 1;
+    z-index: 1;
+}
+
+#va-logo {
+    position: relative;
+    width: max(20em, 25%);
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h2 {text-align: center;}
+h2::after {
+    position: relative;
+    content: "";
+    left: 50%;
+    transform: translate(-50%);
+    width: min(100%, 30em);
+    height: .5rem;
+    background-color: rgb(68, 0, 0);
+    display: block;
+    margin-top: .5rem;
+    border-radius: .15rem;
+}
+
+header {    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1 { text-align: center; }
+.main-text {
+    width: min(45em, 95%);
+    text-align: justify;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.icon img {
+    width: 5rem;
+    background-color: rgb(187, 0, 0);
+    padding: 1rem;
+    border-radius: 100%; 
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-left: 2rem; margin-right: 2rem;
+}
+
+#contactbox {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: min(45em, 95%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+footer { font-size: x-small; text-align: center;}
+
+#copyright {
+    position: fixed;
+    left: 0.25rem;
+    bottom: 0.25rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+#language {
+    position: fixed;
+    right: 0.25rem;
+    bottom: 0.25rem;
+}
+
+#language img {
+    height: 2rem;
+    margin-right: 1rem;
+}
